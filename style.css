@@ -1,0 +1,29 @@
+body {
+    background-color: #fff391;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+header {
+    font-family: 'Pacifico', cursive;
+}
+
+
+
+.check-out {
+    height: 65vh;
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+.card {
+    height: 25vh;
+
+    object-fit: cover;
+    object-position: center;
+    padding: .5em;
+}
