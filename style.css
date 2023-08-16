@@ -21,9 +21,24 @@ header {
 
 
 .card {
-    height: 25vh;
-
+    border: 2px whitesmoke;
+    border-radius: 15px;
     object-fit: cover;
     object-position: center;
     padding: .5em;
+}
+
+.menu-img {
+    height: 25vh;
+    border-radius: 14px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    /* padding: .5em; */
+}
+
+button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
