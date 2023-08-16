@@ -42,7 +42,7 @@ function buyCookieDough() {
     console.log('the diet crusher', cookieDough)
 
     total()
-    // drawCart()
+    drawCart()
 }
 function buyVanilla() {
     // find the flavour amongst flavours
@@ -53,6 +53,7 @@ function buyVanilla() {
     console.log('the classic', vanilla)
 
     total()
+    drawCart()
 }
 function buyStrawberry() {
     // find the flavour amongst flavours
@@ -78,25 +79,26 @@ function total() {
     console.log(total)
 }
 
-// function drawCart() {
-//     // look at flavours
-//     // see if any flavours are in cart
-//     // yes? then how many * cost <-- mult quant and price
-//     // add upper line for each flavour to total of all flavours
-//     // draw to DOM
+function drawCart() {
+    // look at flavours
+    // see if any flavours are in cart
+    // yes? then how many * cost <-- mult quant and price
+    // add upper line for each flavour to total of all flavours
+    // draw to DOM
+    let newCharge = ''
 
-//     iceCream.forEach(flavour => {
-//         let newCharge = ''
-//         if (flavour.quantity > 0) {
-//             newCharge +=
-//                 `  <div class="d-flex justify-content-between">
-//            <span>Yumm x</span>
-//            <span>$$$</span>
-//        </div>`
-//         }
-//         cartElem.innerHTML = newCharge
-//     })
-// }
+    iceCream.forEach(flavour => {
+        if (flavour.quantity > 0) {
+            newCharge +=
+                `  <div class="d-flex justify-content-between">
+           <span>${flavour.name} x ${flavour.quantity}</span>
+           <span>$$$</span>
+       </div>`
+        }
+        console.log(newCharge)
+    })
+    cartElem.innerHTML = newCharge
+}
 
 
 
