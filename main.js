@@ -32,6 +32,8 @@ const toppings = [{
 
 
 let cartElem = document.getElementById('cart')
+let subTotalElem = document.getElementById('subtotal')
+let totalElem = document.getElementById('total')
 
 function buyCookieDough() {
     // find the flavour amongst flavours
@@ -41,7 +43,7 @@ function buyCookieDough() {
     cookieDough.quantity++
     console.log('the diet crusher', cookieDough)
 
-    total()
+    drawTotals()
     drawCart()
 }
 function buyVanilla() {
@@ -52,7 +54,7 @@ function buyVanilla() {
     vanilla.quantity++
     console.log('the classic', vanilla)
 
-    total()
+    drawTotals()
     drawCart()
 }
 function buyStrawberry() {
@@ -66,17 +68,21 @@ function buyStrawberry() {
 }
 
 //SECTION - draws
-function total() {
+function drawTotals() {
     // find all purchases
     // give quantity * price
-
+    let subTotal = 0
     let total = 0
     iceCream.forEach(flavour => {
         if (flavour.quantity > 0) {
-            total += flavour.quantity * flavour.price
+            subTotal += flavour.quantity * flavour.price
         }
     })
-    console.log(total)
+    total = (subTotal * 1.06).toFixed(2)
+    console.log(subTotal, total)
+
+    subTotalElem.innerText = subTotal.toString()
+    totalElem.innerText = total.toString()
 }
 
 function drawCart() {
@@ -90,9 +96,10 @@ function drawCart() {
     iceCream.forEach(flavour => {
         if (flavour.quantity > 0) {
             newCharge +=
-                `  <div class="d-flex justify-content-between">
-           <span>${flavour.name} x ${flavour.quantity}</span>
-           <span>$$$</span>
+                `  <div class="col-md-4 col-12">
+           ${flavour.name} </div>
+           <div class="col-md-4 col-12">x ${flavour.quantity}</div>
+           <div class="col-md-4 col-12">${flavour.price}</div>
        </div>`
         }
         console.log(newCharge)
@@ -102,3 +109,7 @@ function drawCart() {
 
 
 
+// `  <div class="d-flex justify-content-between">
+// <span>${flavour.name} x ${flavour.quantity}</span>
+// <span>${flavour.price}</span>
+// </div>`
