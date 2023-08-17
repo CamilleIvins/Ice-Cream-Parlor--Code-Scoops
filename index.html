@@ -41,7 +41,7 @@
     <header class="container-fluid">
         <section class="row">
             <div class="col-12">
-                <h1>CODE SC<span><i class="mdi mdi-ice-cream mdi-rotate-45"></i><i
+                <h1 class="text-title">CODE SC<span><i class="mdi mdi-ice-cream mdi-rotate-45"></i><i
                             class="mdi mdi-ice-cream mdi-rotate-45"></i></span>PS
                 </h1>
             </div>
@@ -53,7 +53,7 @@
     <main class="container-fluid">
         <section class="row">
             <!-- *SECTION - cart -->
-            <div class="col-md-5 col-12">
+            <div class="col-md-5 col-12 total">
                 <h2>Cart 'em up</h2>
                 <div class="check-out px-2 justify-content-between">
                     Ring up
@@ -67,77 +67,78 @@
                 </div>
                 <div class="text-end">
                     <p class="fs-4">Subtotal: $<span id="subtotal"></span></p>
+                    <p class="fs-6">Tax: $<span id="tax"></span></p>
                     <p class="fs-4">Total: $<span id="total"></span></p>
                 </div>
             </div>
 
             <!-- *SECTION - selections  -->
             <div class="col-md-7 col-12">
-                <h1>Toppings</h1>
+                <h1>FLAVOURS</h1>
                 <div class="row justify-content-around">
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
-                            src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                            src="https://images.unsplash.com/photo-1603736029103-dafad0eb0906?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
                             alt="">
-                        <button title="cookie dough" onclick="buyCookieDough()">Purchase</button>
+                        <button title="cookie dough" onclick="buyPistachio()">Pistachio</button>
                     </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
-                            src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                            src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=408&q=80"
                             alt="">
-                        <button title="vanilla" onclick="buyVanilla()">Purchase</button>
+                        <button title="vanilla" onclick="buyVanilla()">Vanilla</button>
 
                     </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
-                            src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                            src="https://images.unsplash.com/photo-1618485476424-7dc9cd512c08?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
                             alt="">
-                        <button title="strawberry" onclick="buyStrawberry()">Purchase</button>
+                        <button title="strawberry" onclick="buyStrawberry()">Strawberry</button>
                     </div>
 
                 </div>
 
-                <h1>vessels</h1>
+                <h1>VESSELS</h1>
                 <div class="row justify-content-around">
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
-                            src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                            src="https://images.unsplash.com/photo-1484876586759-80555b97b22d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                             alt="">
-
+                        <button title="cup" onclick="buyCup()">Cup</button>
                     </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
-                            src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                            src="https://images.unsplash.com/photo-1513329634746-37399553de66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                             alt="">
-
+                        <button title="waffle cone" onclick="buyWaffleCone()">Waffle Cone</button>
                     </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
-                            src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                            src="https://images.unsplash.com/photo-1602296750425-f025b045f355?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
                             alt="">
-
+                        <button title="waffle cone cup" onclick="buyWaffleCup()">Waffle Cone Cup</button>
                     </div>
                 </div>
 
-                <h1>Ice Cream</h1>
+                <h1>TOPPINGS</h1>
                 <div class="row justify-content-around">
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
-                            src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                            src="https://images.unsplash.com/photo-1657502360008-667db038296b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                             alt="">
-
+                        <button title="waffle cone cup" onclick="buyHagelslag()">Hagelslag</button>
                     </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
-                            src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                            src="https://images.unsplash.com/photo-1585502866757-30ae9e509e31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
                             alt="">
-
+                        <button title="waffle cone cup" onclick="buyChips()">Chocolate Chips</button>
                     </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
-                            src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                            src="https://images.unsplash.com/photo-1485745655111-3272a37e76a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
                             alt="">
-
+                        <button title="waffle cone cup" onclick="buyCookie()">Cookie Chunks</button>
                     </div>
                 </div>
 

@@ -2,14 +2,24 @@ body {
     background-color: #fff391;
 }
 
-main {
+.total {
     background-color: aliceblue;
 }
 
-header {
-    font-family: 'Pacifico', cursive;
+
+h1 {
+    font-family: 'Laila', sans-serif;
 }
 
+button {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    opacity: 70%;
+    width: 100%;
+}
 
 
 .check-out {
@@ -25,11 +35,12 @@ header {
     border-radius: 15px;
     object-fit: cover;
     object-position: center;
-    padding: .5em;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .menu-img {
-    height: 25vh;
+    height: 20vh;
     border-radius: 14px;
     object-fit: cover;
     object-position: center;
@@ -37,8 +48,14 @@ header {
     /* padding: .5em; */
 }
 
-button {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .25s;
+    box-shadow: 0 0 10px 3px #fff2f8,
+        inset 0 0 10px 3px #fff2f8;
+}
+
+.text-title {
+    font-family: 'Pacifico', cursive;
 }
