@@ -177,6 +177,13 @@ function drawTotals() {
     totalElem.innerText = total.toString()
 }
 
+function checkOut() {
+    iceCream.forEach(flavour => flavour.quantity = 0)
+    vessels.forEach(holder => holder.quantity = 0)
+    toppings.forEach(topping => topping.quantity = 0)
+    console.log('checking out')
+}
+
 function drawCart() {
     // look at flavours
     // see if any flavours are in cart

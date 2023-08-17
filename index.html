@@ -57,8 +57,8 @@
             <div class="col-md-5 col-12 total">
                 <h2>Cart 'em up</h2>
                 <div class="check-out px-2 justify-content-between">
-                    Ring up
-                    <div id="cart" class="row ">
+
+                    <div id="cart" class="row fs-4">
                         <!-- <div class="d-flex justify-content-between">
                             <span>Yumm x</span>
                             <span>$$$</span>
@@ -71,31 +71,38 @@
                     <p class="fs-6">Tax: $<span id="tax"></span></p>
                     <p class="fs-4">Total: $<span id="total"></span></p>
                 </div>
+                <button title="check-out" onclick="checkOut()"
+                    class="text-end bg-warning rounded-pill">Purchase</button>
             </div>
-
             <!-- *SECTION - selections  -->
             <div class="col-md-7 col-12">
                 <h1>FLAVOURS</h1>
                 <div class="row justify-content-around">
-                    <button class="col-md-3 col-12 card" title="pistachio" onclick="buyPistachio()">
+                    <div class="col-md-3 col-12 card">
                         <img class="menu-img"
                             src="https://images.unsplash.com/photo-1603736029103-dafad0eb0906?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
                             alt="">
                         <!-- <div class="item-name">Pistachio</div> -->
-
-                    </button>
+                        <button title="pistachio" onclick="buyPistachio()">Pistachio
+                            <span class="mdi mdi-cart"></span>
+                        </button>
+                    </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
                             src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=408&q=80"
                             alt="">
-                        <button title="vanilla" onclick="buyVanilla()">Vanilla</button>
+                        <button title="vanilla" onclick="buyVanilla()">Vanilla
+                            <span class="mdi mdi-cart"></span>
+                        </button>
 
                     </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
                             src="https://images.unsplash.com/photo-1618485476424-7dc9cd512c08?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
                             alt="">
-                        <button title="strawberry" onclick="buyStrawberry()">Strawberry</button>
+                        <button title="strawberry" onclick="buyStrawberry()">Strawberry
+                            <span class="mdi mdi-cart"></span>
+                        </button>
                     </div>
 
                 </div>
@@ -106,19 +113,25 @@
                         <img class="menu-img"
                             src="https://images.unsplash.com/photo-1484876586759-80555b97b22d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                             alt="">
-                        <button title="cup" onclick="buyCup()">Cup</button>
+                        <button title="cup" onclick="buyCup()">Cup
+                            <span class="mdi mdi-cart"></span>
+                        </button>
                     </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
                             src="https://images.unsplash.com/photo-1513329634746-37399553de66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                             alt="">
-                        <button title="waffle cone" onclick="buyWaffleCone()">Waffle Cone</button>
+                        <button title="waffle cone" onclick="buyWaffleCone()">Waffle Cone
+                            <span class="mdi mdi-cart"></span>
+                        </button>
                     </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
                             src="https://images.unsplash.com/photo-1602296750425-f025b045f355?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
                             alt="">
-                        <button title="waffle cone cup" onclick="buyWaffleCup()">Waffle Cone Cup</button>
+                        <button title="waffle cone cup" onclick="buyWaffleCup()">Waffle Cone Cup
+                            <span class="mdi mdi-cart"></span>
+                        </button>
                     </div>
                 </div>
 
@@ -128,19 +141,25 @@
                         <img class="menu-img"
                             src="https://images.unsplash.com/photo-1657502360008-667db038296b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                             alt="">
-                        <button title="waffle cone cup" onclick="buyHagelslag()">Hagelslag</button>
+                        <button title="waffle cone cup" onclick="buyHagelslag()">Hagelslag
+                            <span class="mdi mdi-cart"></span>
+                        </button>
                     </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
                             src="https://images.unsplash.com/photo-1585502866757-30ae9e509e31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
                             alt="">
-                        <button title="waffle cone cup" onclick="buyChips()">Chocolate Chips</button>
+                        <button title="waffle cone cup" onclick="buyChips()">Chocolate Chips
+                            <span class="mdi mdi-cart"></span>
+                        </button>
                     </div>
                     <div class="col-md-3 col-12 card">
                         <img class="menu-img"
                             src="https://images.unsplash.com/photo-1485745655111-3272a37e76a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
                             alt="">
-                        <button title="waffle cone cup" onclick="buyCookie()">Cookie Chunks</button>
+                        <button title="waffle cone cup" onclick="buyCookie()">Cookie Chunks
+                            <span class="mdi mdi-cart"></span>
+                        </button>
                     </div>
                 </div>
 
