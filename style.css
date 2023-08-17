@@ -39,6 +39,11 @@ button {
     padding-right: 0;
 }
 
+.code {
+    font-family: 'IBM Plex Mono', mono space;
+    font-size: 42px;
+}
+
 .menu-img {
     height: 20vh;
     border-radius: 14px;

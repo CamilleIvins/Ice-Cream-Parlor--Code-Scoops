@@ -163,6 +163,11 @@ function drawTotals() {
             subTotal += holder.quantity * holder.price
         }
     })
+    toppings.forEach(topping => {
+        if (topping.quantity > 0) {
+            subTotal += topping.quantity * topping.price
+        }
+    })
     tax = (subTotal * .06).toFixed(2)
     total = (subTotal * 1.06).toFixed(2)
     console.log(subTotal, total)
